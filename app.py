@@ -6,8 +6,6 @@ import librosa
 import pandas as pd
 import tensorflow as tf
 from tensorflow.keras.layers import LSTM
-
-
 # --- 1. CUSTOM LAYER FIX ---
 # This handles the "time_major" error by stripping the bad argument
 class FixedLSTM(LSTM):
