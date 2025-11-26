@@ -1,10 +1,12 @@
 streamlit
 requests
-numpy
 pandas
 matplotlib
-librosa
 h5py
-# Pinning exact versions to match Kaggle's environment
-tensorflow==2.15.0
+# Use CPU-only version (Much smaller, prevents "Out of Memory" crashes)
+tensorflow-cpu==2.15.0
+# Pin Keras to match TensorFlow
 keras==2.15.0
+# Pin Numpy to <2 to prevent conflicts with Librosa/TensorFlow
+numpy<2.0.0
+librosa
