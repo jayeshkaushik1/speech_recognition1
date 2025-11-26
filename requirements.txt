@@ -1,0 +1,10 @@
+streamlit
+requests
+numpy
+pandas
+matplotlib
+librosa
+h5py
+# Pinning exact versions to match Kaggle's environment
+tensorflow==2.15.0
+keras==2.15.0
